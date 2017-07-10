@@ -40,3 +40,7 @@ Route::group(['prefix'=>'admin'], function(){
 		return 'ADMIN LOGIN';
 	});
 });
+
+Route::get('/phpinfo', function(){
+	return view('phpinfo');
+});
