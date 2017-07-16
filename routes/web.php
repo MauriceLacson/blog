@@ -44,3 +44,7 @@ Route::group(['prefix'=>'admin'], function(){
 Route::get('/phpinfo', function(){
 	return view('phpinfo');
 });
+
+Route::get('/default', function(){
+	return view('layouts.default');
+});

@@ -74,6 +74,12 @@
 
               <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
 
+              <!-- <pre>
+                  <?php
+                      print_r(\Auth::user());
+                  ?>
+              </pre> -->
+
               <p>
                 <span class="label label-danger">UI Design</span>
                 <span class="label label-success">Coding</span>
@@ -313,8 +319,9 @@
               <!-- /.tab-pane -->
 
               <div class="tab-pane" id="settings">
-                <form class="form-horizontal">
-                  <div class="form-group">
+                <form class="form-horizontal" method="post" action="{{ route('home') }}">
+                {{ csrf_field() }}
+                  <!-- <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">Name</label>
 
                     <div class="col-sm-10">
@@ -327,20 +334,20 @@
                     <div class="col-sm-10">
                       <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
-                  </div>
+                  </div> -->
                   
                   <div class="form-group">
                     <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
 
                     <div class="col-sm-10">
-                      <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                      <textarea class="form-control" id="inputExperience" name="experience" placeholder="Experience"></textarea>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
 
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                      <input type="text" class="form-control" id="inputSkills" name="skills" placeholder="Skills">
                     </div>
                   </div>
                   <div class="form-group">

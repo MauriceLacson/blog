@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function store()
+    {
+        $data = request()->all();
+        Home::create($data);
+        return redirect()->route('user.home');
+    }
 }
