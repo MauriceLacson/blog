@@ -54,16 +54,16 @@ Blogs
 			total_pages: @{{ total_pages }}, total: @{{ total }}
 		</div>
 	</div>
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-xs-3">
 			<input ng-model="per_page"/>
 		</div>
-	</div>
+	</div> -->
 
-	<pre>
+	<!-- <pre>
 		total : @{{ total }}
 		total pages : @{{ total_pages }}
-	</pre>
+	</pre> -->
 
 
 

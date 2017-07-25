@@ -49,14 +49,18 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .links {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
-                text-decoration: none;
+                
                 text-transform: uppercase;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             .m-b-md {
@@ -77,18 +81,13 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="container">
                 <div class="title m-b-md">
-                    Laravel
+                    <a href="{{ url('/blogs') }}">
+                        Blogs
+                    </a>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
     </body>

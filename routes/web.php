@@ -20,6 +20,7 @@ Auth::routes();
 Route::group(['middleware'=>'auth'], function(){
 	Route::get('/home', 'HomeController@index')->name('home');
 	Route::get('/profile', 'UserController@profile')->name('profile');
+	Route::post('/home/{user?}', 'UserController@edit');
 
 	Route::resource('blogs', 'BlogController');
 
